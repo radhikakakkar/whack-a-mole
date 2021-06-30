@@ -1,0 +1,54 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+  padding: 20px;
+}
+.square {
+  height: 200px;
+  width: 200px;
+  border: grey solid 2px;
+  box-shadow: inset 10px 10px 30px rgb(243, 185, 152);
+}
+.container-fluid {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 610px;
+  height: 610px;
+}
+
+#score {
+  font-style: italic;
+}
+#seconds {
+  font-style: italic;
+}
+
+.mole {
+  padding: 2px;
+  background-image: url(https://image.shutterstock.com/image-vector/cartoon-cute-mole-260nw-274323440.jpg);
+  background-repeat: no-repeat;
+  background-position: 4px 12px;
+  background-size: cover;
+  background-size: 200px 200px;
+}
+@media (max-width: 700px) {
+  .square{
+    width: 100px;
+    height: 100px;
+    }
+    .grid{
+        width:300px;
+        height:300px;
+    }
+    .mole{
+        background-size: 90px 90px;
+
+    }
+}
